@@ -2208,7 +2208,7 @@ defmodule ElixirLS.LanguageServer.Server do
       prev_project_dir != project_dir ->
         JsonRpc.show_message(
           :warning,
-          "Project directory change detected. ElixirLS will restart"
+          "Project directory change detected. ElixirLS will restart. Old: #{prev_project_dir}. New: #{project_dir}."
         )
 
         JsonRpc.telemetry(
