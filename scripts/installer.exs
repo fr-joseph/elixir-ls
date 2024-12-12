@@ -489,7 +489,7 @@ defmodule ElixirLS.Installer do
   defp run_mix_install({:tag, tag}, force?) do
     ElixirLS.Mix.install(
       [
-        {:elixir_ls, github: "elixir-lsp/elixir-ls", tag: tag}
+        {:elixir_ls, github: "fr-joseph/elixir-ls", tag: tag}
       ],
       force: force?,
       start_applications: false,
